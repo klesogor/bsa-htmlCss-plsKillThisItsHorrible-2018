@@ -3,76 +3,88 @@ main {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0.5rem;
+  justify-content: space-around;
+  padding: 0px 0.5rem 0px 0.5rem;
 }
 
 /* line 10, ../sass/main.scss */
 .card {
   max-width: 220px;
   background: #FFF;
-  max-height: 400px;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   cursor: default;
-  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in-out,max-height 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-right: 1rem;
 }
-/* line 24, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .card p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 29, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .card .img-wrap {
   overflow: hidden;
 }
-/* line 31, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .card .img-wrap img {
   width: 100%;
   height: auto;
   transition: all 1s ease-in-out;
   margin: auto;
 }
-/* line 39, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .card .header {
   padding-top: 5px;
   font-weight: 600;
   text-align: center;
   min-height: 30px;
 }
-/* line 46, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .card .content {
   padding: 3px;
   font-size: 1rem;
   display: block;
+  overflow: hidden;
+  max-height: 250px;
+  min-height: 250px;
+  transition: max-height 0.3s ease-in-out;
 }
-/* line 52, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .card .time {
   color: #AAA;
   padding: 3px;
   display: block;
 }
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .card .footer {
   color: #888;
   margin-left: 0.3rem;
 }
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .card .footer p {
   display: inline;
 }
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .card .footer p:nth-child(2) {
   margin-left: 0.5rem;
 }
-/* line 68, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  max-height: 900px;
 }
 /* line 71, ../sass/main.scss */
+.card:hover .content {
+  max-height: 900px;
+}
+/* line 74, ../sass/main.scss */
 .card:hover img {
   transform: scale(1.1);
+}
+
+@media (min-width: 780px) {
+  /* line 81, ../sass/main.scss */
+  main {
+    justify-content: space-between;
+  }
 }

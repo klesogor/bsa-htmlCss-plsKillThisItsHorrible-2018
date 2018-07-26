@@ -11,6 +11,7 @@ header{
     background: $main;
     color:$text-primary; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin-bottom: 1.5rem;
 }
 
 .social{
@@ -72,7 +73,7 @@ header{
         cursor: pointer;
   
         opacity: 0;
-        z-index: 2;
+        z-index: 3;
   
         -webkit-touch-callout: none;
     }
@@ -87,7 +88,7 @@ header{
         background: $text-primary;
         border-radius: 3px;
         
-        z-index: 1;
+        z-index: 2;
         
         transform-origin: 4px 0px;
         
@@ -102,15 +103,20 @@ header{
     }
     input:checked ~ ul
     {
+        z-index:1;
         transform: none;
+        a{
+            &:hover{
+                color:$text-primary;
+            }
+        }
     }
 }
 
 .menu-items{
-    position: fixed;
+    position: absolute;
+    width: 100vw;
     height:auto;
-    width: 25%;
-    height:100%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;

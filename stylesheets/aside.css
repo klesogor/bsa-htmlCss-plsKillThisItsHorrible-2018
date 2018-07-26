@@ -3,22 +3,21 @@ aside {
   background: #fff;
   height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  margin-top: 1.5rem;
 }
 
-/* line 9, ../sass/aside.scss */
+/* line 8, ../sass/aside.scss */
 .user-info {
   background: #002984;
   max-height: 500px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-/* line 14, ../sass/aside.scss */
+/* line 13, ../sass/aside.scss */
 .user-info img {
   width: 100%;
   height: auto;
 }
-/* line 18, ../sass/aside.scss */
+/* line 17, ../sass/aside.scss */
 .user-info h3 {
   font-style: italic;
   color: #FFF;
@@ -26,71 +25,71 @@ aside {
   margin-bottom: 0.6rem;
 }
 
-/* line 26, ../sass/aside.scss */
+/* line 25, ../sass/aside.scss */
 .user-social {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
 
-/* line 31, ../sass/aside.scss */
+/* line 30, ../sass/aside.scss */
 .user-social-icons {
   display: flex;
   justify-content: space-around;
 }
-/* line 34, ../sass/aside.scss */
+/* line 33, ../sass/aside.scss */
 .user-social-icons a {
   color: #000;
   font-size: 1.5rem;
 }
 
-/* line 41, ../sass/aside.scss */
+/* line 40, ../sass/aside.scss */
 .subscribe .input-controll {
   padding: 0.5rem;
   margin-bottom: 0.6rem;
 }
-/* line 44, ../sass/aside.scss */
+/* line 43, ../sass/aside.scss */
 .subscribe .input-controll lable {
   display: block;
   margin-bottom: 0.2rem;
 }
-/* line 48, ../sass/aside.scss */
+/* line 47, ../sass/aside.scss */
 .subscribe .input-controll input {
   width: 100%;
   height: 1.5rem;
   padding: 3px;
 }
-/* line 53, ../sass/aside.scss */
+/* line 52, ../sass/aside.scss */
 .subscribe .input-controll button {
   width: 80%;
   font-size: 1.3rem;
 }
-/* line 59, ../sass/aside.scss */
+/* line 58, ../sass/aside.scss */
 .subscribe .button {
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
 }
 
-/* line 65, ../sass/aside.scss */
+/* line 64, ../sass/aside.scss */
 .aside-search {
   margin: 0.3rem;
   margin-bottom: 1rem;
   width: 100%;
   text-align: center;
 }
-/* line 70, ../sass/aside.scss */
+/* line 69, ../sass/aside.scss */
 .aside-search button {
   width: 20%;
   height: 25px;
 }
-/* line 75, ../sass/aside.scss */
+/* line 74, ../sass/aside.scss */
 .aside-search input {
   width: 75%;
   margin: 0px;
   padding: 3px;
 }
 
-/* line 82, ../sass/aside.scss */
+/* line 81, ../sass/aside.scss */
 .tags {
   margin: 0.5rem;
   display: flex;
@@ -98,7 +97,7 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 89, ../sass/aside.scss */
+/* line 88, ../sass/aside.scss */
 .tags span {
   padding: 5px;
   border-radius: 6px;
@@ -109,60 +108,64 @@ aside {
   font-size: 1rem;
 }
 
-/* line 100, ../sass/aside.scss */
+/* line 99, ../sass/aside.scss */
 h3 {
   width: 100%;
   text-align: center;
   margin-top: 0.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* line 108, ../sass/aside.scss */
+/* line 107, ../sass/aside.scss */
 .comments {
   margin: 0.6rem;
   margin-top: 0.6rem;
+  margin-bottom: 0rem;
 }
 
 /* line 113, ../sass/aside.scss */
 .comment {
-  height: 68px;
+  background: #EEE;
   width: 100%;
+  max-height: 100px;
+  overflow: hidden;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42);
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 124, ../sass/aside.scss */
+/* line 125, ../sass/aside.scss */
 .comment img {
-  width: 100%;
+  width: 40%;
   height: auto;
+  display: block;
   border-radius: 50%;
   margin: auto;
 }
-/* line 131, ../sass/aside.scss */
+/* line 133, ../sass/aside.scss */
 .comment .img-wrapper {
-  padding: 5px;
+  display: flex;
   width: 30%;
   border-right: 1px solid #000;
 }
 
-/* line 138, ../sass/aside.scss */
+/* line 140, ../sass/aside.scss */
 .comment-block {
-  background-color: #DFD;
   display: flex;
   flex-direction: column;
   padding: 4px;
   width: 70%;
 }
-/* line 145, ../sass/aside.scss */
+/* line 146, ../sass/aside.scss */
 .comment-block h4 {
   margin: 0;
   font-style: italic;
 }
-/* line 149, ../sass/aside.scss */
+/* line 150, ../sass/aside.scss */
 .comment-block span {
+  margin-top: 1rem;
   display: inline-block;
   max-width: 300px;
   font-size: 1.1rem;
@@ -171,7 +174,13 @@ h3 {
   overflow: hidden;
 }
 
-/* line 161, ../sass/aside.scss */
+@media (min-width: 780px) {
+  /* line 164, ../sass/aside.scss */
+  .comment img {
+    width: 60%;
+  }
+}
+/* line 170, ../sass/aside.scss */
 .subscribe .input-controll button, .aside-search button {
   cursor: pointer;
 }
