@@ -1,0 +1,14 @@
+@import "vars";
+footer{
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,0.4);
+    margin-top:4rem;
+    width: 100%;
+    background-color: $secondary-dark;
+    min-height:100px;
+
+    h2{
+        width:100%;
+        text-align:center;
+        color:$text-secondary;
+    }
+}
