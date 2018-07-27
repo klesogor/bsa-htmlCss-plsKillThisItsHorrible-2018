@@ -3,10 +3,11 @@ footer{
     box-shadow: 0 4px 8px 5px rgba(0,0,0,0.4);
     margin-top:4rem;
     width: 100%;
-    background-color: $secondary-dark;
+    background-color: $main;
     min-height:100px;
 
     h2{
+        margin-top:1rem;
         width:100%;
         text-align:center;
         color:$text-secondary;

@@ -7,8 +7,8 @@ header {
   grid-template-rows: 1fr 2fr;
   min-height: 100px;
   grid-template-areas: "menu social" "logo logo";
-  background: #00acc1;
-  color: #000;
+  background: #232323;
+  color: #cdcdcd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   margin-bottom: 1.5rem;
 }
@@ -83,7 +83,7 @@ header {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #000;
+  background: #cdcdcd;
   border-radius: 3px;
   z-index: 2;
   transform-origin: 4px 0px;
@@ -92,7 +92,7 @@ header {
 /* line 100, ../sass/header.scss */
 .menu input:checked ~ span {
   opacity: 1;
-  background: #FFF;
+  background: #000;
 }
 /* line 104, ../sass/header.scss */
 .menu input:checked ~ ul {
@@ -101,18 +101,18 @@ header {
 }
 /* line 109, ../sass/header.scss */
 .menu input:checked ~ ul a:hover {
-  color: #000;
+  color: #FFF;
 }
 
 /* line 116, ../sass/header.scss */
 .menu-items {
   position: absolute;
-  width: 100vw;
+  width: 110vw;
   height: auto;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #3f51b5;
+  background: #cdcdcd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -126,7 +126,7 @@ header {
 /* line 137, ../sass/header.scss */
 .menu-items a {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
 }
 
 @media (min-width: 780px) {
@@ -168,7 +168,7 @@ header {
   .menu-items a {
     display: inline-block;
     margin-right: 1.2rem;
-    color: #000;
+    color: #cdcdcd;
   }
   /* line 179, ../sass/header.scss */
   .menu-items a:hover {
@@ -181,7 +181,7 @@ header {
   }
   /* line 188, ../sass/header.scss */
   .social .search {
-    border-left: 2px solid #000;
+    border-left: 2px solid #FFF;
   }
 
   /* line 192, ../sass/header.scss */

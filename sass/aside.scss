@@ -6,7 +6,7 @@ aside{
 }
 
 .user-info{
-    background: $secondary-dark;
+    background: $main;
     max-height: 500px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -34,6 +34,7 @@ aside{
         color: $text-primary;
         font-size:1.5rem;
     }
+    margin: 0.5rem 0.3rem 0.5rem 0.3rem;
 }
 
 .subscribe{
@@ -63,7 +64,7 @@ aside{
 }
 .aside-search{
     margin:0.3rem;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
     width:100%;
     text-align:center;
     button{
@@ -88,7 +89,7 @@ aside{
     span{
         padding:5px;
         border-radius:6px;
-        color:$text-secondary;
+        color:$text-primary;
         background: $secondary;
         margin-left:0.3rem;
         margin-bottom:0.6rem;

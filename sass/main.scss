@@ -8,15 +8,16 @@ main{
 }
 
 .card{
-    max-width:220px;
+    min-width:100px;
+    max-width:240px;
     background:#FFF;
     margin-bottom:1.5rem;
     cursor: default;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: all 0.3s ease-in-out;
-
-    margin-right: 1rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
 
     p{
         margin-top: 5px;

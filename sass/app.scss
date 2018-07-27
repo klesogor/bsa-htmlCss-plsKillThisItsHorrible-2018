@@ -3,11 +3,12 @@
 @import "main";
 @import "aside";
 @import "footer";
+@import "_reset";
 
 body{
     font-size: 20px;
     max-width:1200px;
-    font-family: Arial, Helvetica, Arial, sans-serif;
+    font-family: "Avenir Next", "Avenir", sans-serif;
     margin: 0 auto 0 auto;
     padding: 0;
     background: #eee;

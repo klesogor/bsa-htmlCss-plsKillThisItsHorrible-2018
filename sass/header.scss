@@ -9,7 +9,7 @@ header{
     min-height:100px;
     grid-template-areas: "menu social" "logo logo";
     background: $main;
-    color:$text-primary; 
+    color:$text-secondary; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     margin-bottom: 1.5rem;
 }
@@ -85,7 +85,7 @@ header{
         margin-bottom: 5px;
         position: relative;
         
-        background: $text-primary;
+        background: $text-secondary;
         border-radius: 3px;
         
         z-index: 2;
@@ -99,7 +99,7 @@ header{
 
     input:checked ~ span{
         opacity: 1;
-        background: $text-secondary;
+        background: #000;
     }
     input:checked ~ ul
     {
@@ -107,7 +107,7 @@ header{
         transform: none;
         a{
             &:hover{
-                color:$text-primary;
+                color:#FFF;
             }
         }
     }
@@ -115,7 +115,7 @@ header{
 
 .menu-items{
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     height:auto;
     margin: -100px 0 0 -50px;
     padding: 50px;
@@ -136,7 +136,7 @@ header{
 
     a{
         text-decoration: none;
-        color:$text-secondary;
+        color:$text-primary;
     }
 }
 
@@ -175,7 +175,7 @@ header{
         a{
             display:inline-block;
             margin-right:1.2rem;
-            color:$text-primary;
+            color:$text-secondary;
             &:hover{
                 text-decoration: underline;
             }
@@ -186,7 +186,7 @@ header{
             display:inline;
         }
         .search{
-            border-left: 2px solid $text-primary;
+            border-left: 2px solid #FFF;
         }
     }
     .logo{

@@ -39,8 +39,8 @@ header {
   grid-template-rows: 1fr 2fr;
   min-height: 100px;
   grid-template-areas: "menu social" "logo logo";
-  background: #00acc1;
-  color: #000;
+  background: #232323;
+  color: #cdcdcd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   margin-bottom: 1.5rem;
 }
@@ -115,7 +115,7 @@ header {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #000;
+  background: #cdcdcd;
   border-radius: 3px;
   z-index: 2;
   transform-origin: 4px 0px;
@@ -124,7 +124,7 @@ header {
 /* line 100, ../sass/header.scss */
 .menu input:checked ~ span {
   opacity: 1;
-  background: #FFF;
+  background: #000;
 }
 /* line 104, ../sass/header.scss */
 .menu input:checked ~ ul {
@@ -133,18 +133,18 @@ header {
 }
 /* line 109, ../sass/header.scss */
 .menu input:checked ~ ul a:hover {
-  color: #000;
+  color: #FFF;
 }
 
 /* line 116, ../sass/header.scss */
 .menu-items {
   position: absolute;
-  width: 100vw;
+  width: 110vw;
   height: auto;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #3f51b5;
+  background: #cdcdcd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -158,7 +158,7 @@ header {
 /* line 137, ../sass/header.scss */
 .menu-items a {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
 }
 
 @media (min-width: 780px) {
@@ -200,7 +200,7 @@ header {
   .menu-items a {
     display: inline-block;
     margin-right: 1.2rem;
-    color: #000;
+    color: #cdcdcd;
   }
   /* line 179, ../sass/header.scss */
   .menu-items a:hover {
@@ -213,7 +213,7 @@ header {
   }
   /* line 188, ../sass/header.scss */
   .social .search {
-    border-left: 2px solid #000;
+    border-left: 2px solid #FFF;
   }
 
   /* line 192, ../sass/header.scss */
@@ -233,38 +233,40 @@ main {
 
 /* line 10, ../sass/main.scss */
 .card {
-  max-width: 220px;
+  min-width: 100px;
+  max-width: 240px;
   background: #FFF;
   margin-bottom: 1.5rem;
   cursor: default;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-in-out;
-  margin-right: 1rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
 }
-/* line 21, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .card p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .card .img-wrap {
   overflow: hidden;
 }
-/* line 28, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .card .img-wrap img {
   width: 100%;
   height: auto;
   transition: all 1s ease-in-out;
   margin: auto;
 }
-/* line 36, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .card .header {
   padding-top: 5px;
   font-weight: 600;
   text-align: center;
   min-height: 30px;
 }
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .card .content {
   padding: 3px;
   font-size: 1rem;
@@ -274,40 +276,40 @@ main {
   min-height: 150px;
   transition: max-height 0.3s ease-in-out;
 }
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .card .time {
   color: #AAA;
   padding: 3px;
   display: block;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .card .footer {
   color: #888;
   margin-left: 0.3rem;
 }
-/* line 61, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .card .footer p {
   display: inline;
 }
-/* line 64, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .card .footer p:nth-child(2) {
   margin-left: 0.5rem;
 }
-/* line 69, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 71, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .card:hover .content {
   max-height: 900px;
 }
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .card:hover img {
   transform: scale(1.1);
 }
 
 @media (min-width: 780px) {
-  /* line 81, ../sass/main.scss */
+  /* line 82, ../sass/main.scss */
   main {
     justify-content: space-between;
   }
@@ -321,7 +323,7 @@ aside {
 
 /* line 8, ../sass/aside.scss */
 .user-info {
-  background: #002984;
+  background: #232323;
   max-height: 500px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -334,7 +336,7 @@ aside {
 /* line 17, ../sass/aside.scss */
 .user-info h3 {
   font-style: italic;
-  color: #FFF;
+  color: #cdcdcd;
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
 }
@@ -349,6 +351,7 @@ aside {
 .user-social-icons {
   display: flex;
   justify-content: space-around;
+  margin: 0.5rem 0.3rem 0.5rem 0.3rem;
 }
 /* line 33, ../sass/aside.scss */
 .user-social-icons a {
@@ -356,54 +359,54 @@ aside {
   font-size: 1.5rem;
 }
 
-/* line 40, ../sass/aside.scss */
+/* line 41, ../sass/aside.scss */
 .subscribe .input-controll {
   padding: 0.5rem;
   margin-bottom: 0.6rem;
 }
-/* line 43, ../sass/aside.scss */
+/* line 44, ../sass/aside.scss */
 .subscribe .input-controll lable {
   display: block;
   margin-bottom: 0.2rem;
 }
-/* line 47, ../sass/aside.scss */
+/* line 48, ../sass/aside.scss */
 .subscribe .input-controll input {
   width: 100%;
   height: 1.5rem;
   padding: 3px;
 }
-/* line 52, ../sass/aside.scss */
+/* line 53, ../sass/aside.scss */
 .subscribe .input-controll button {
   width: 80%;
   font-size: 1.3rem;
 }
-/* line 58, ../sass/aside.scss */
+/* line 59, ../sass/aside.scss */
 .subscribe .button {
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
 }
 
-/* line 64, ../sass/aside.scss */
+/* line 65, ../sass/aside.scss */
 .aside-search {
   margin: 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 100%;
   text-align: center;
 }
-/* line 69, ../sass/aside.scss */
+/* line 70, ../sass/aside.scss */
 .aside-search button {
   width: 20%;
   height: 25px;
 }
-/* line 74, ../sass/aside.scss */
+/* line 75, ../sass/aside.scss */
 .aside-search input {
   width: 75%;
   margin: 0px;
   padding: 3px;
 }
 
-/* line 81, ../sass/aside.scss */
+/* line 82, ../sass/aside.scss */
 .tags {
   margin: 0.5rem;
   display: flex;
@@ -411,18 +414,18 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 88, ../sass/aside.scss */
+/* line 89, ../sass/aside.scss */
 .tags span {
   padding: 5px;
   border-radius: 6px;
-  color: #FFF;
-  background: #3f51b5;
+  color: #000;
+  background: #cdcdcd;
   margin-left: 0.3rem;
   margin-bottom: 0.6rem;
   font-size: 1rem;
 }
 
-/* line 99, ../sass/aside.scss */
+/* line 100, ../sass/aside.scss */
 h3 {
   width: 100%;
   text-align: center;
@@ -430,14 +433,14 @@ h3 {
   margin-bottom: 1rem;
 }
 
-/* line 107, ../sass/aside.scss */
+/* line 108, ../sass/aside.scss */
 .comments {
   margin: 0.6rem;
   margin-top: 0.6rem;
   margin-bottom: 0rem;
 }
 
-/* line 113, ../sass/aside.scss */
+/* line 114, ../sass/aside.scss */
 .comment {
   background: #EEE;
   width: 100%;
@@ -450,7 +453,7 @@ h3 {
   border-radius: 4px;
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 125, ../sass/aside.scss */
+/* line 126, ../sass/aside.scss */
 .comment img {
   width: 40%;
   height: auto;
@@ -458,26 +461,26 @@ h3 {
   border-radius: 50%;
   margin: auto;
 }
-/* line 133, ../sass/aside.scss */
+/* line 134, ../sass/aside.scss */
 .comment .img-wrapper {
   display: flex;
   width: 30%;
   border-right: 1px solid #000;
 }
 
-/* line 140, ../sass/aside.scss */
+/* line 141, ../sass/aside.scss */
 .comment-block {
   display: flex;
   flex-direction: column;
   padding: 4px;
   width: 70%;
 }
-/* line 146, ../sass/aside.scss */
+/* line 147, ../sass/aside.scss */
 .comment-block h4 {
   margin: 0;
   font-style: italic;
 }
-/* line 150, ../sass/aside.scss */
+/* line 151, ../sass/aside.scss */
 .comment-block span {
   margin-top: 1rem;
   display: inline-block;
@@ -489,12 +492,12 @@ h3 {
 }
 
 @media (min-width: 780px) {
-  /* line 164, ../sass/aside.scss */
+  /* line 165, ../sass/aside.scss */
   .comment img {
     width: 60%;
   }
 }
-/* line 170, ../sass/aside.scss */
+/* line 171, ../sass/aside.scss */
 .subscribe .input-controll button, .aside-search button {
   cursor: pointer;
 }
@@ -504,27 +507,41 @@ footer {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.4);
   margin-top: 4rem;
   width: 100%;
-  background-color: #002984;
+  background-color: #232323;
   min-height: 100px;
 }
 /* line 9, ../sass/footer.scss */
 footer h2 {
+  margin-top: 1rem;
   width: 100%;
   text-align: center;
-  color: #FFF;
+  color: #cdcdcd;
 }
 
-/* line 7, ../sass/app.scss */
+/* line 1, ../sass/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 6, ../sass/_reset.scss */
+a,
+p,
+span {
+  display: inline;
+}
+
+/* line 8, ../sass/app.scss */
 body {
   font-size: 20px;
   max-width: 1200px;
-  font-family: Arial, Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   margin: 0 auto 0 auto;
   padding: 0;
   background: #eee;
 }
 
-/* line 16, ../sass/app.scss */
+/* line 17, ../sass/app.scss */
 *, *::after, *::before {
   box-sizing: border-box;
 }

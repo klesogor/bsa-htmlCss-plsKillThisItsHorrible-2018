@@ -9,38 +9,40 @@ main {
 
 /* line 10, ../sass/main.scss */
 .card {
-  max-width: 220px;
+  min-width: 100px;
+  max-width: 240px;
   background: #FFF;
   margin-bottom: 1.5rem;
   cursor: default;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-in-out;
-  margin-right: 1rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
 }
-/* line 21, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .card p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .card .img-wrap {
   overflow: hidden;
 }
-/* line 28, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .card .img-wrap img {
   width: 100%;
   height: auto;
   transition: all 1s ease-in-out;
   margin: auto;
 }
-/* line 36, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .card .header {
   padding-top: 5px;
   font-weight: 600;
   text-align: center;
   min-height: 30px;
 }
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .card .content {
   padding: 3px;
   font-size: 1rem;
@@ -50,40 +52,40 @@ main {
   min-height: 150px;
   transition: max-height 0.3s ease-in-out;
 }
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .card .time {
   color: #AAA;
   padding: 3px;
   display: block;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .card .footer {
   color: #888;
   margin-left: 0.3rem;
 }
-/* line 61, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .card .footer p {
   display: inline;
 }
-/* line 64, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .card .footer p:nth-child(2) {
   margin-left: 0.5rem;
 }
-/* line 69, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 71, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .card:hover .content {
   max-height: 900px;
 }
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .card:hover img {
   transform: scale(1.1);
 }
 
 @media (min-width: 780px) {
-  /* line 81, ../sass/main.scss */
+  /* line 82, ../sass/main.scss */
   main {
     justify-content: space-between;
   }
